@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Локальное тестирование WebSocket (Чат)</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="chat-box"></div>
+
+        <div class="input-form">
+            <p class="error-message opacity">Введите сообщение для отправки сообщения!</p>
+            <div class="input-form__line">
+                <textarea name="message" class="message-input" rows="3"></textarea>
+                <button class="btn btn-primary message-button">Отправить сообщение</button>
+            </div>
+            <div class="input-form__line">
+                <button class="btn btn-primary button-connect">Подключиться к серверу</button>
+                <button class="btn btn-primary button-disconnect">Отключиться от сервера</button>
+                <button class="btn btn-primary button-location">Гео-локация</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

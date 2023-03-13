@@ -1,0 +1,16 @@
+version: "3.5"
+
+services:
+
+  echo:
+    build:
+      context: "./EchoServer"
+    container_name: "docker-echo-server"
+    ports:
+      - "localhost:10000:8080"
+    networks:
+      - docker-echo-server
+
+networks:
+  docker-echo-server:
+    driver: bridge
